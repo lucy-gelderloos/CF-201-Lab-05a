@@ -51,7 +51,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let firstProd = multiply(a,b);
   let secondProd = multiply(firstProd,c);
 
-  return(secondSum);
+  return(secondProd);
   // return([secondSum,secondProd,a + ' and ' + b + ' and ' + c + ' sum to ' + secondSum + '.','The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + secondProd + '.']);
 }
 
@@ -77,7 +77,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+// testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -90,11 +90,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  let arrProd = sumAndMultiply(multArr[0],multArr[1],multArr[2]);
+  return([arrProd,'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + arrProd + '.']);
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
